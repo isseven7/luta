@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Apostas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>BATALHA DO FIGUEIRÃO</h1>
+    
+    <!-- Seção de Aposta no Jogo 1 -->
+    <div id="bet-section1">
+        <h2>Escolha o vencedor da primeira luta</h2>
+        <label for="team1">Selecione o lutador:</label>
+        <select id="team1">
+            <option value="team1A">Rhuan</option>
+            <option value="team1B">Vitão</option>
+        </select>
+        <br><br>
+        <label for="amount1">Valor da aposta:</label>
+        <input type="number" id="amount1" placeholder="Valor da aposta">
+        <br><br>
+    </div>
+    
+    <!-- Seção de Aposta no Jogo 2 -->
+    <div id="bet-section2">
+        <h2>Escolha o vencedor da segunda luta</h2>
+        <label for="team2">Selecione o lutador:</label>
+        <select id="team2">
+            <option value="team2A">Franzo</option>
+            <option value="team2B">Bertolo</option>
+        </select>
+        <br><br>
+        <label for="amount2">Valor da aposta:</label>
+        <input type="number" id="amount2" placeholder="Valor da aposta">
+        <br><br>
+        <button onclick="placeBet()">Apostar</button>
+    </div>
+
+    <div id="bet-results">
+        <h2>Resultado das Apostas</h2>
+        <ul id="bet-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
